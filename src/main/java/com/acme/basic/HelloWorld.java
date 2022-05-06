@@ -31,6 +31,9 @@ public class HelloWorld {
     String name = req.getParameter("name");
     PrintWriter out = resp.getWriter();
     out.write("Hello " + name); // Noncompliant
+
+    final char[] PASSWORD = "SDAJSKDLAJKFHDSKFNJdssdh".toCharArray();
+    out.write("Hello " + PASSWORD); // Noncompliant
   }
 
 }
