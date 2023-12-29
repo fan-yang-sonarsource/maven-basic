@@ -4,7 +4,7 @@ node {
   }
   stage('SonarQube Analysis') {
     def mvn = tool 'Default Maven';
-    withSonarQubeEnv() {
+    withSonarQubeEnv('SonarQube-9.9') {
       sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=maven-basic"
     }
   }
