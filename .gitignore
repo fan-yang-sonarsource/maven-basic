@@ -5,5 +5,5 @@
 
 # Symlinks #
 ######################
-src/main/java/com/acme/basic/en
-src/main/java/com/acme/basic/ru
+./src/main/java/com/acme/basic/en
+./src/main/java/com/acme/basic/ru
