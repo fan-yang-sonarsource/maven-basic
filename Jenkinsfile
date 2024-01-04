@@ -3,7 +3,7 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-    export JAVA_HOME='/usr/libexec/java_home -v 11.0'
+    sh "export JAVA_HOME='/usr/libexec/java_home -v 11.0'"
     def mvn = tool 'Default Maven';
     def scannerHome = tool 'SonarScanner';
     withSonarQubeEnv('SonarQube-9.9') {
