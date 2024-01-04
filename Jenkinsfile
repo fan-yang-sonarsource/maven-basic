@@ -8,6 +8,7 @@ node {
     withSonarQubeEnv('SonarQube-9.9') {
 //      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=maven-basic"
       sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=maven-basic"
+      echo "test point1"
     }
     echo "analysis finished."
   }
