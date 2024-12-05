@@ -1,11 +1,12 @@
-// package com.acme.basic;
+package com.acme.basic;
 
-// import org.junit.Test;
+import org.junit.Test;
 
-// public class HelloWorldTest {
+public class HelloWorldTest {
 
-//   @Test
-//   public void sayHello() {
-//     new HelloWorld().sayHello();
-//   }
-// }
+  @Test
+  public void sayHello() {
+    new HelloWorld().sayHello();
+    
+  }
+}
