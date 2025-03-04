@@ -35,10 +35,6 @@ public class HelloWorld {
     System.out.println("This method is not covered by unit tests");
   }
 
-  void notCovered5() {
-    System.out.println("This method is not covered by unit tests");
-  }
-
   boolean isNameEmpty() {
     return getName("world").length() == 0; // Noncompliant; the result of getName() could be null, but isn't null-checked
   }
